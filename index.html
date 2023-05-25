@@ -8,5 +8,77 @@
     <link rel="stylesheet" href="./style.css" />
     <script src="./script.js" defer></script>
   </head>
-  <body></body>
+  <body>
+    <div class="left-side">
+      <img src="./images/mountain-background.jpg" alt="mountain climber" />
+      <div class="logo-bar">
+        <img src="./images/logo.png" alt="logo" />
+        <h1 class="logo-font">Fayzer Climbing Academy</h1>
+      </div>
+    </div>
+    <div class="right-side">
+      <h2 class="company-blurb">
+        Sign up for the adventure of your life with Fayzer Climbing Academy. On
+        this 6 week adventure you will be taken through the back-country of
+        northern BC where you will camp and climb with Mr. Fay himself.
+      </h2>
+      <h2 class="sign-up-burb">
+        Create an account to get started <em>now</em>.
+      </h2>
+      <form action="/submitted.html" method="post">
+        <div class="form-row">
+          <div class="form-control">
+            <label for="first-name">FIRST NAME</label
+            ><input type="text" required id="first-name" name="first-name" />
+          </div>
+          <div class="form-control">
+            <label for="last-name">LAST NAME</label
+            ><input type="text" required id="last-name" name="last-name" />
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-control">
+            <label for="user-email">EMAIL</label
+            ><input type="email" required id="user-email" name="user-email" />
+          </div>
+          <div class="form-control">
+            <label for="phone-number">PHONE NUMBER</label
+            ><input type="tel" required id="phone-number" name="phone-number" />
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-control">
+            <label for="password">PASSWORD</label
+            ><input
+              type="text"
+              required
+              id="password"
+              name="password"
+              minlength="8"
+              maxlength="20"
+            />
+          </div>
+          <div class="form-control">
+            <label for="conf-password">CONFIRM PASSWORD</label
+            ><input
+              type="text"
+              required
+              id="conf-password"
+              name="conf-password"
+              minlength="8"
+              maxlength="20"
+            />
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-control">
+            <button type="submit">Create Account</button>
+          </div>
+        </div>
+      </form>
+      <h3 class="already-account">
+        Already have an account? <a href="#">log-in</a>
+      </h3>
+    </div>
+  </body>
 </html>
